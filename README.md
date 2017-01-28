@@ -1,10 +1,13 @@
 # thai-names
 
-[![travis build](https://img.shields.io/travis/jojoee/thai-names.svg?style=flat-square)](https://travis-ci.org/jojoee/thai-names)
-[![codecov coverage](https://img.shields.io/codecov/c/github/jojoee/thai-names.svg?style=flat-square)](https://codecov.io/github/jojoee/thai-names)
-[![version](https://img.shields.io/npm/v/thai-names.svg?style=flat-square)](http://npm.im/thai-names)
-[![downloads](https://img.shields.io/npm/dm/thai-names.svg?style=flat-square)](http://npm-stat.com/charts.html?package=thai-names)
-[![MIT License](https://img.shields.io/npm/l/thai-names.svg?style=flat-square)](http://opensource.org/licenses/MIT)
+[![Travis](https://img.shields.io/travis/jojoee/thai-names.svg)](https://travis-ci.org/jojoee/thai-names)
+[![Codecov](https://img.shields.io/codecov/c/github/jojoee/thai-names.svg)](https://codecov.io/github/jojoee/thai-names)
+[![Download - Github All Releases](https://img.shields.io/github/downloads/jojoee/thai-names/total.svg)]()
+[![Download - npm](https://img.shields.io/npm/dt/thai-names.svg)](http://npm-stat.com/charts.html?package=thai-names)
+[![Version - npm](https://img.shields.io/npm/v/thai-names.svg)](https://www.npmjs.com/package/thai-names)
+[![Version - Bower](https://img.shields.io/bower/v/thai-names.svg)](https://bower.io/search/?q=thai-names)
+[![License - Bower](https://img.shields.io/bower/l/thai-names.svg)](http://opensource.org/licenses/MIT)
+[![License - npm](https://img.shields.io/npm/l/thai-names.svg)](http://opensource.org/licenses/MIT)
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg?style=flat-square)](https://github.com/semantic-release/semantic-release)
 
 Get random Thai names
@@ -12,10 +15,14 @@ Get random Thai names
 ## Installation
 
 ```
+// npm
 npm install starwars-names
+
+// Bower
+// src/firstnames.json
 ```
 
-## Usage
+## Usage for npm
 
 ```javascript
 var names = require('thai-names');
@@ -61,6 +68,14 @@ var threeRandomNames = names.random(3);
 4. Run `git add -A` to add your changes
 5. Run `npm run commit` (don not use `git commit`)
 6. Push your changes with `git push` then create Pull Request
+
+## Contribute for owner
+```
+$ npm install -g semantic-release-cli
+$ semantic-release-cli setup
+
+Using above command to setup "semantic-release"
+```
 
 ## Reference
 - Thai names, credit from [รวบรวมชื่อคนที่สะกดได้ทั้งภาษาไทยและภาษาต่างประเทศ และความหมายของชื่อค่ะ](https://pantip.com/topic/31259696) by [Almond Hambert Jr](https://pantip.com/profile/240418)@22012017-1014
