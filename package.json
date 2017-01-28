@@ -1,0 +1,81 @@
+{
+  "name": "thai-names",
+  "version": "1.0.0",
+  "description": "Get random Thai names",
+  "main": "dist/index.js",
+  "scripts": {
+    "commit": "git-cz",
+    "coverage": "nyc --reporter=lcov npm t",
+    "coverage.check": "nyc check-coverage --statements 100 --branches 100 --functions 100 --lines 100",
+    "coverage.report": "cat ./coverage/lcov.info | codecov",
+    "test": "mocha src/index.test.js --compilers js:babel-register",
+    "test.watch": "npm t -- --watch",
+    "prebuild": "rimraf dist",
+    "build": "npm-run-all --parallel build:*",
+    "build:main": "babel --copy-files --out-dir dist --ignore *.test.js src",
+    "build:umd": "webpack --output-filename index.umd.js",
+    "build:umd.min": "webpack --output-filename index.umd.min.js -p",
+    "validate": "npm run coverage && npm run coverage.check",
+    "setup": "npm install && npm run validate",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jojoee/thai-names.git"
+  },
+  "keywords": [
+    "random",
+    "thai",
+    "name"
+  ],
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "author": "Nathachai Thongniran <inid3a@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jojoee/thai-names/issues"
+  },
+  "homepage": "https://github.com/jojoee/thai-names#readme",
+  "dependencies": {
+    "unique-random-array": "^1.0.0"
+  },
+  "devDependencies": {
+    "babel-cli": "6.11.4",
+    "babel-loader": "6.2.4",
+    "babel-preset-es2015": "6.13.2",
+    "babel-preset-stage-2": "6.13.0",
+    "babel-register": "6.11.6",
+    "chai": "3.5.0",
+    "codecov": "1.0.1",
+    "commitizen": "2.8.5",
+    "cz-conventional-changelog": "1.1.6",
+    "ghooks": "1.3.2",
+    "json-loader": "0.5.4",
+    "mocha": "3.0.1",
+    "npm-run-all": "2.3.0",
+    "nyc": "7.1.0",
+    "rimraf": "2.5.4",
+    "semantic-release": "^4.2.1",
+    "webpack": "1.13.1"
+  },
+  "engines": {
+    "node": "6.x",
+    "npm": "3.x"
+  },
+  "config": {
+    "ghooks": {
+      "pre-commit": "npm run validate"
+    },
+    "commitizen": {
+      "path": "node_modules/cz-conventional-changelog"
+    }
+  },
+  "babel": {
+    "presets": [
+      "es2015",
+      "stage-2"
+    ]
+  }
+}

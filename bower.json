@@ -1,0 +1,22 @@
+{
+  "name": "thai-names",
+  "description": "Get random Thai names",
+  "main": "dist/index.umd.js",
+  "authors": [
+    "Nathachai Thongniran <inid3a@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "random",
+    "thai",
+    "name"
+  ],
+  "homepage": "https://github.com/jojoee/thai-names",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

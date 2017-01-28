@@ -1,0 +1,19 @@
+# Backup
+bk*
+
+# Log
+npm-debug.log
+
+# Dependencies
+bower_components
+node_modules
+
+# Coverage
+coverage
+.nyc_output
+
+# Compiled
+dist
+
+# Lock
+yarn.lock
