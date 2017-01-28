@@ -1,7 +1,7 @@
 {
   "name": "thai-names",
   "description": "Get random Thai names",
-  "main": "dist/index.umd.js",
+  "main": "src/firstnames.json",
   "authors": [
     "Nathachai Thongniran <inid3a@gmail.com>"
   ],
