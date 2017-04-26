@@ -2,11 +2,8 @@
 
 [![Travis](https://img.shields.io/travis/jojoee/thai-names.svg)](https://travis-ci.org/jojoee/thai-names)
 [![Codecov](https://img.shields.io/codecov/c/github/jojoee/thai-names.svg)](https://codecov.io/github/jojoee/thai-names)
-[![Download - Github All Releases](https://img.shields.io/github/downloads/jojoee/thai-names/total.svg)]()
 [![Download - npm](https://img.shields.io/npm/dt/thai-names.svg)](http://npm-stat.com/charts.html?package=thai-names)
 [![Version - npm](https://img.shields.io/npm/v/thai-names.svg)](https://www.npmjs.com/package/thai-names)
-[![Version - Bower](https://img.shields.io/bower/v/thai-names.svg)](https://bower.io/search/?q=thai-names)
-[![License - Bower](https://img.shields.io/bower/l/thai-names.svg)](http://opensource.org/licenses/MIT)
 [![License - npm](https://img.shields.io/npm/l/thai-names.svg)](http://opensource.org/licenses/MIT)
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg?style=flat-square)](https://github.com/semantic-release/semantic-release)
 
