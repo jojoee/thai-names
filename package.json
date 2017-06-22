@@ -60,10 +60,6 @@
     "semantic-release": "^6.3.2",
     "webpack": "1.13.1"
   },
-  "engines": {
-    "node": "6.x",
-    "npm": "3.x"
-  },
   "config": {
     "ghooks": {
       "pre-commit": "npm run validate"
